@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Starter</string>
+    <string name="welcome_to_starter">Welcome to Starter</string>
+    <string name="talk_to_interesting_people">Talk to interesting people</string>
+    <string name="get_started">Get Started</string>
+    <string name="already_have_account">Already have account?</string>
+    <string name="sign_in">Sign in</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="customize_your_interests">Customize your interests</string>
+    <string name="just_to_give_you_the_best_experience">Just to give you the best experience</string>
+    <string name="chat_with_awesome_people">Chat with awesome people</string>
+    <string name="our_ai_find_the_best_people_that_share_your_interests">Our AI find the best people that share your interests</string>
+    <string name="get_more">Get more!</string>
+    <string name="liked_your_match_save_in_your_starter_case_of_cool_people">Liked your match? save in your starter case of cool people</string>
+</resources>
