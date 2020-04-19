@@ -2,36 +2,39 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".fragments.FirstWelcomeFragment">
-
+    tools:context=".fragments.WelcomeFragment">
 
     <ImageView
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/interest_onboarding"
+        android:id="@+id/fragment_welcome_image_view"
         android:layout_width="260dp"
-        android:scaleType="centerInside"
-        android:layout_height="300dp"/>
-
-
-    <TextView
-        android:textSize="24sp"
-        android:layout_marginTop="@dimen/size_32dp"
-        android:textColor="@color/light_purple"
+        android:layout_height="260dp"
         android:layout_gravity="center_horizontal"
-        android:textStyle="bold"
-        android:text="@string/customize_your_interests"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:src="@drawable/interest_onboarding" />
 
     <TextView
-        android:gravity="center"
+        android:id="@+id/fragment_welcome_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size_16dp"
+        android:text="@string/customize_your_interests"
+        android:textColor="@color/light_purple"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/fragment_welcome_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginStart="@dimen/size_64dp"
         android:layout_marginEnd="@dimen/size_64dp"
-        android:textColor="@color/bluey_grey"
-        android:layout_gravity="center_horizontal"
+        android:gravity="center"
         android:text="@string/just_to_give_you_the_best_experience"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:textColor="@color/bluey_grey" />
+
 </LinearLayout>

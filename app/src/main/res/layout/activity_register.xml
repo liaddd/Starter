@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/register_activity_image_view"
+        android:layout_width="@dimen/size_64dp"
+        android:layout_height="@dimen/size_64dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size_16dp"
+        android:contentDescription="@string/register"
+        android:src="@drawable/starter_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/register_activity_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_32dp"
+        android:layout_marginTop="@dimen/size_16dp"
+        android:layout_marginEnd="@dimen/size_32dp"
+        android:gravity="center_horizontal"
+        android:maxEms="8"
+        android:text="@string/find_people_that_share_your_interest"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_activity_image_view" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_activity_name_til"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_32dp"
+        android:layout_marginTop="@dimen/size_32dp"
+        android:layout_marginEnd="@dimen/size_32dp"
+        android:hint="@string/name"
+        app:layout_constraintTop_toBottomOf="@+id/register_activity_title_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_activity_name_text_iet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_activity_email_til"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_32dp"
+        android:layout_marginTop="@dimen/size_16dp"
+        android:layout_marginEnd="@dimen/size_32dp"
+        android:hint="@string/email_address"
+        app:layout_constraintTop_toBottomOf="@+id/register_activity_name_til">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_activity_name_email_iet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_activity_password_til"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_32dp"
+        android:layout_marginTop="@dimen/size_16dp"
+        android:layout_marginEnd="@dimen/size_32dp"
+        android:hint="@string/password"
+        app:layout_constraintTop_toBottomOf="@+id/register_activity_email_til">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_activity_name_password_iet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/register_activity_password_verify_til"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_32dp"
+        android:layout_marginTop="@dimen/size_16dp"
+        android:layout_marginEnd="@dimen/size_32dp"
+        android:hint="@string/re_password"
+        app:layout_constraintTop_toBottomOf="@+id/register_activity_password_til">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/register_activity_name_password_verify_iet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register_activity_register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_32dp"
+        android:layout_marginTop="@dimen/size_32dp"
+        android:layout_marginEnd="@dimen/size_32dp"
+        android:layout_marginBottom="@dimen/size_16dp"
+        android:background="@drawable/purple_gradient_background"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/register_activity_bottom_text_layout" />
+
+    <LinearLayout
+        android:id="@+id/register_activity_bottom_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/size_16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/register_activity_already_have_acc_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/already_have_account"
+            android:textColor="@color/bluey_grey"
+            android:textSize="@dimen/text_16sp" />
+
+        <TextView
+            android:id="@+id/register_activity_sign_in_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/size_4dp"
+            android:text="@string/sign_in"
+            android:textColor="@color/light_purple"
+            android:textSize="@dimen/text_16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.ChooseGenderFragment">
+
+
+    <TextView
+        android:id="@+id/choose_gender_fragment_title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size_16dp"
+        android:text="@string/choose_gender"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_24sp" />
+
+    <TextView
+        android:id="@+id/choose_gender_fragment_sub_title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_48dp"
+        android:layout_marginTop="@dimen/size_16dp"
+        android:layout_marginEnd="@dimen/size_48dp"
+        android:gravity="center"
+        android:text="@string/just_to_help_us"
+        android:textColor="@color/light_gray" />
+
+
+    <TextView
+        android:id="@+id/choose_gender_fragment_gender_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_32dp"
+        android:layout_marginTop="@dimen/size_16dp"
+        android:text="@string/you_are"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_24sp"
+        android:textStyle="bold" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/choose_gender_fragment_gender_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_16dp" />
+
+
+    <TextView
+        android:id="@+id/choose_gender_fragment_chat_with_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_32dp"
+        android:layout_marginTop="@dimen/size_16dp"
+        android:text="@string/chat_with"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_24sp"
+        android:textStyle="bold" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/choose_gender_fragment_chat_with_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_16dp" />
+
+</LinearLayout>

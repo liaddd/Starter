@@ -1,4 +1,4 @@
-package com.liad.starter.activites
+package com.liad.starter.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
