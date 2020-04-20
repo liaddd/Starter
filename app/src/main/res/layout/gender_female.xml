@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gender_background"
+    android:gravity="center"
+    android:padding="@dimen/size_32dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/size_48dp"
+        android:layout_height="@dimen/size_48dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/female" />
+
+    <TextView
+        android:layout_marginTop="@dimen/size_8dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/female" />
+
+</LinearLayout>

@@ -1,4 +1,4 @@
-package com.liad.starter.fragments
+package com.liad.starter.fragments.create_profile_fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater

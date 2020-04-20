@@ -7,4 +7,5 @@
     <color name="dark_purple">#8b63e6</color>
     <color name="light_purple">#7265e3</color>
     <color name="light_gray">#d6d9e0</color>
+    <color name="gender_gray_background">#ededed</color>
 </resources>

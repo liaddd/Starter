@@ -32,4 +32,8 @@
     <string name="just_to_help_us">Just to help us know a bit more and to give you a better experience</string>
     <string name="you_are">You are?</string>
     <string name="chat_with">Chat with?</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="both_genders">Both genders</string>
+    <string name="clear_all">Clear all</string>
 </resources>

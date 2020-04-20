@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activities.CreateProfileActivity"></activity>
+        <activity android:name=".activities.DoneActivity"></activity>
+        <activity android:name=".activities.CreateProfileActivity" />
         <activity android:name=".activities.RegisterActivity" />
         <activity android:name=".activities.LoginActivity" />
         <activity android:name=".activities.MainActivity" />

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".fragments.ChooseGenderFragment">
+    tools:context=".fragments.create_profile_fragments.ChooseGenderFragment">
 
 
     <TextView
@@ -41,11 +41,30 @@
         android:textStyle="bold" />
 
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/choose_gender_fragment_gender_recycler_view"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/size_16dp" />
+        android:layout_marginStart="@dimen/size_32dp"
+        android:layout_marginTop="@dimen/size_16dp"
+        android:layout_marginEnd="@dimen/size_32dp"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/choose_gender_fragment_you_are_male"
+            layout="@layout/gender_male"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/choose_gender_fragment_you_are_female"
+            layout="@layout/gender_female"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/size_32dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
 
 
     <TextView
@@ -59,11 +78,46 @@
         android:textSize="@dimen/text_24sp"
         android:textStyle="bold" />
 
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/choose_gender_fragment_chat_with_recycler_view"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/size_16dp" />
+        android:layout_marginStart="@dimen/size_32dp"
+        android:layout_marginTop="@dimen/size_16dp"
+        android:layout_marginEnd="@dimen/size_32dp"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/choose_gender_fragment_chat_with_male"
+            layout="@layout/gender_male"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+        <include
+            android:id="@+id/choose_gender_fragment_chat_with_female"
+            layout="@layout/gender_female"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/size_32dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/choose_gender_fragment_both_genders_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_64dp"
+        android:layout_marginStart="@dimen/size_32dp"
+        android:layout_marginTop="@dimen/size_32dp"
+        android:layout_marginEnd="@dimen/size_32dp"
+        android:background="@drawable/gender_background"
+        android:gravity="center"
+        android:text="@string/both_genders"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
 
 </LinearLayout>
