@@ -11,8 +11,8 @@
         android:layout_width="260dp"
         android:layout_height="260dp"
         android:layout_gravity="center_horizontal"
-        android:scaleType="centerInside"
         android:adjustViewBounds="true"
+        android:scaleType="centerInside"
         android:src="@drawable/interest_onboarding" />
 
     <TextView

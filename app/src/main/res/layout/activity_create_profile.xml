@@ -17,7 +17,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:visibility="gone"
         android:id="@+id/create_profile_activity_clear_all_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,6 +24,7 @@
         android:layout_marginEnd="@dimen/size_16dp"
         android:text="@string/clear_all"
         android:textColor="@android:color/black"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

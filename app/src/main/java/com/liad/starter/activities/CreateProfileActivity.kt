@@ -43,12 +43,12 @@ class CreateProfileActivity : AppCompatActivity() {
         )
 
         create_profile_activity_continue_button.setOnClickListener {
-            if (currentFragmentPos == 2){
+            if (currentFragmentPos == 2) {
                 changeActivity(DoneActivity::class.java)
                 return@setOnClickListener
             }
             ++currentFragmentPos
-            Log.d("Liad" , "currentFragmentPos $currentFragmentPos")
+            Log.d("Liad", "currentFragmentPos $currentFragmentPos")
             changeFragment(
                 supportFragmentManager,
                 fragments[currentFragmentPos],

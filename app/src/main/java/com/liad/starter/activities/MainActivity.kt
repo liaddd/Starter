@@ -1,7 +1,7 @@
 package com.liad.starter.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.liad.starter.R
 
 class MainActivity : AppCompatActivity() {

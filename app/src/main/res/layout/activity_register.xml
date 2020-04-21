@@ -126,8 +126,8 @@
         android:id="@+id/register_activity_bottom_text_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
         android:layout_marginBottom="@dimen/size_16dp"
+        android:gravity="center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -145,8 +145,8 @@
             android:id="@+id/register_activity_sign_in_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginStart="@dimen/size_4dp"
+            android:gravity="center"
             android:text="@string/sign_in"
             android:textColor="@color/light_purple"
             android:textSize="@dimen/text_16sp" />

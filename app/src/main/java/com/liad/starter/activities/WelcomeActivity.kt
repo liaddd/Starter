@@ -1,8 +1,7 @@
 package com.liad.starter.activities
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.liad.starter.R
 import com.liad.starter.adapters.FragmentPagerAdapter

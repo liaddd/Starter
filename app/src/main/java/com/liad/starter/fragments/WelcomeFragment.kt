@@ -2,16 +2,12 @@ package com.liad.starter.fragments
 
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.DrawableRes
-import androidx.annotation.IntDef
-import androidx.annotation.IntegerRes
 import androidx.annotation.StringRes
-import androidx.core.os.bundleOf
-
+import androidx.fragment.app.Fragment
 import com.liad.starter.R
 import kotlinx.android.synthetic.main.fragment_first_welcome.*
 

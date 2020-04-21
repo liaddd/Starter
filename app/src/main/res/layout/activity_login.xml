@@ -116,10 +116,10 @@
     </LinearLayout>
 
     <TextView
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_margin="@dimen/size_32dp"
         android:gravity="center_horizontal"
         android:maxEms="16"
