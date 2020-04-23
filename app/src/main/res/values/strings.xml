@@ -25,9 +25,6 @@
     <string name="select_photo">You can select photo from one of this emoji or add your own photo profile picture</string>
     <string name="continue_text">Continue</string>
     <string name="add_custom_photo">Add Custom Photo</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="choose_gender">Choose gender</string>
     <string name="just_to_help_us">Just to help us know a bit more and to give you a better experience</string>
     <string name="you_are">You are?</string>
@@ -36,4 +33,8 @@
     <string name="female">Female</string>
     <string name="both_genders">Both genders</string>
     <string name="clear_all">Clear all</string>
+    <string name="done_thanks_text">Thanks for taking your time to create account with us. Now this is the fun part, let\'s explore the app.</string>
+    <string name="you_are_ready_to_go">You are ready to go!</string>
+    <string name="get_started">Get Started</string>
+
 </resources>
