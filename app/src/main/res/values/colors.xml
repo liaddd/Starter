@@ -7,5 +7,11 @@
     <color name="dark_purple">#8b63e6</color>
     <color name="light_purple">#7265e3</color>
     <color name="light_gray">#d6d9e0</color>
+    <color name="orange_light">#ffa073</color>
+    <color name="orange_dark">#ff8298</color>
+    <color name="red_light">#e83f94</color>
+    <color name="red_dark">#f54e5e</color>
+    <color name="cyan_light">#2dc9eb</color>
+    <color name="cyan_dark">#14d2b8</color>
     <color name="gender_gray_background">#ededed</color>
 </resources>

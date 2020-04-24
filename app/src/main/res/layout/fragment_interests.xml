@@ -1,26 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
-    <!-- <com.nex3z.flowlayout.FlowLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         app:flChildSpacing="auto"
-         app:flChildSpacingForLastRow="align"
-         app:flRowSpacing="8dp">
+    <TextView
+        android:id="@+id/fragment_interests_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_16dp"
+        android:text="@string/customize_your_interests"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_24sp" />
 
-         <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="SUN" />
+    <TextView
+        android:id="@+id/fragment_interests_selected_interests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_16dp"
+        android:text="@string/customize_your_interests" />
 
-         <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="MON" />
+    <com.nex3z.flowlayout.FlowLayout
+        android:padding="@dimen/size_8dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fragment_interests_flow_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/size_16dp"
+        android:layout_marginTop="@dimen/size_32dp"
+        android:layout_marginEnd="@dimen/size_16dp"
+        app:flChildSpacing="@dimen/size_8dp"
+        app:flChildSpacingForLastRow="align"
+        app:flRowSpacing="@dimen/size_16dp">
 
-     </com.nex3z.flowlayout.FlowLayout>-->
+    </com.nex3z.flowlayout.FlowLayout>
 
 
 </LinearLayout>
