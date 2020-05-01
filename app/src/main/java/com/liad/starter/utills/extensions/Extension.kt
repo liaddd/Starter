@@ -7,7 +7,6 @@ import androidx.annotation.IdRes
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 
-
 fun Activity.setFullScreen() {
     this.window.setFlags(
         WindowManager.LayoutParams.FLAG_FULLSCREEN,

@@ -32,9 +32,6 @@
         android:layout_marginEnd="@dimen/size_16dp"
         app:flChildSpacing="@dimen/size_8dp"
         app:flChildSpacingForLastRow="align"
-        app:flRowSpacing="@dimen/size_16dp">
-
-    </com.nex3z.flowlayout.FlowLayout>
-
+        app:flRowSpacing="@dimen/size_16dp"/>
 
 </LinearLayout>

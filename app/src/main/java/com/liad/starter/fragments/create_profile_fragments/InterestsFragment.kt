@@ -24,6 +24,8 @@ class InterestsFragment : Fragment() {
     }
 
     private lateinit var flowLayout: FlowLayout
+
+    // TODO Liad - fix Interest Class and use it 
     private lateinit var interests: List<Interest>
 
     private val interestsTitle = arrayOf(
@@ -56,7 +58,6 @@ class InterestsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View = inflater.inflate(R.layout.fragment_interests, container, false)
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
