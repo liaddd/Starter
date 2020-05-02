@@ -25,7 +25,7 @@ class InterestsFragment : Fragment() {
 
     private lateinit var flowLayout: FlowLayout
 
-    // TODO Liad - fix Interest Class and use it 
+    // TODO Liad - fix Interest Class and use it
     private lateinit var interests: List<Interest>
 
     private val interestsTitle = arrayOf(
