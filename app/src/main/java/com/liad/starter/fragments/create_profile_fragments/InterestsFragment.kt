@@ -14,7 +14,6 @@ import com.liad.starter.activities.CreateProfileActivity
 import com.liad.starter.models.Interest
 import com.nex3z.flowlayout.FlowLayout
 import kotlinx.android.synthetic.main.fragment_interests.*
-import kotlin.random.Random
 
 class InterestsFragment : Fragment() {
 
@@ -25,7 +24,6 @@ class InterestsFragment : Fragment() {
 
     private lateinit var flowLayout: FlowLayout
 
-    // TODO Liad - fix Interest Class and use it
     private lateinit var interests: List<Interest>
 
     private val interestsTitle = arrayOf(
@@ -47,13 +45,6 @@ class InterestsFragment : Fragment() {
         "Dancing"
     )
 
-    private val interestBackground = arrayOf(
-        R.drawable.purple_gradient_background,
-        R.drawable.red_gradient_background,
-        R.drawable.cyan_gradient_background,
-        R.drawable.orange_gradient_background
-    )
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -63,27 +54,49 @@ class InterestsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         (activity as? CreateProfileActivity)?.currentPage(3)
-        initViews()
+        initInterestsList()
+        initInterestsButtons()
     }
 
-    private fun initViews() {
+    private fun initInterestsList() {
+        interests = List(16) {
+            Interest(interestsTitle[it])
+        }
+    }
+
+    private fun initInterestsButtons() {
         flowLayout = fragment_interests_flow_layout
 
-        val params = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT , LinearLayout.LayoutParams.WRAP_CONTENT)
+        val params = LinearLayout.LayoutParams(
+            LinearLayout.LayoutParams.WRAP_CONTENT,
+            LinearLayout.LayoutParams.WRAP_CONTENT
+        )
 
-        for (interest in interestsTitle) {
+        for (interest in interests) {
             val button = Button(context)
-            button.text = interest
+            button.text = interest.title
             button.isAllCaps = false
-            button.setPadding(16 , 16 , 16 , 16)
+            button.setPadding(36, 16, 36, 16)
             button.setTextColor(
-                ResourcesCompat.getColor(resources, android.R.color.white, null)
+                ResourcesCompat.getColor(resources, android.R.color.darker_gray, null)
             )
             button.background = ResourcesCompat.getDrawable(
                 resources,
-                interestBackground[Random.nextInt(interestBackground.size)],
+                /*interestBackground[Random.nextInt(interestBackground.size)]*/
+                interest.background,
                 null
             )
+            button.setOnClickListener {
+                interest.isSelected = !interest.isSelected
+                (it as? Button)?.setTextColor(
+                    ResourcesCompat.getColor(
+                        resources,
+                        if (interest.isSelected) android.R.color.white else android.R.color.darker_gray,
+                        null
+                    )
+                )
+                it.background = ResourcesCompat.getDrawable(resources, interest.background, null)
+            }
             flowLayout.addView(button)
         }
     }
