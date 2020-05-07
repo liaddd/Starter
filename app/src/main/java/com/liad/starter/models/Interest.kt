@@ -16,6 +16,6 @@ class Interest(
         R.drawable.orange_gradient_background
     )
 
-    var background: Int = R.drawable.white_background_gray_border
-        get() = if(isSelected) interestBackground[Random.nextInt(interestBackground.size)] else R.drawable.white_background_gray_border
+    val background: Int
+        get() = if (isSelected) interestBackground[Random.nextInt(interestBackground.size)] else R.drawable.white_background_gray_border
 }
