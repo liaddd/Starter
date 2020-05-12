@@ -21,17 +21,16 @@
         android:layout_marginTop="@dimen/size_16dp"
         android:text="@string/customize_your_interests" />
 
-    <com.nex3z.flowlayout.FlowLayout
-        android:padding="@dimen/size_8dp"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <com.nex3z.flowlayout.FlowLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/fragment_interests_flow_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="@dimen/size_16dp"
         android:layout_marginTop="@dimen/size_32dp"
         android:layout_marginEnd="@dimen/size_16dp"
+        android:padding="@dimen/size_8dp"
         app:flChildSpacing="@dimen/size_8dp"
         app:flChildSpacingForLastRow="align"
-        app:flRowSpacing="@dimen/size_16dp"/>
+        app:flRowSpacing="@dimen/size_16dp" />
 
 </LinearLayout>
