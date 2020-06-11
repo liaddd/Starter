@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple_gradient_background"
+    tools:context=".fragments.profile_fragments.ProfileFragment">
+
+    <TextView
+        android:id="@+id/fragment_profile_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_16dp"
+        android:text="@string/my_profile"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_profile_user_info_containae"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_32dp"
+        android:background="@drawable/white_gradient_background"
+        android:translationZ="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_profile_title">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/fragment_profile_image_view"
+            android:layout_width="@dimen/size_48dp"
+            android:layout_height="@dimen/size_48dp"
+            android:layout_centerHorizontal="true"
+            android:src="@android:drawable/btn_star" />
+
+        <TextView
+            android:layout_below="@+id/fragment_profile_image_view"
+            android:id="@+id/fragment_profile_user_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Roberto Namir"
+            android:textColor="@android:color/black" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/fragment_profile_user_level_image_view"
+            android:layout_width="@dimen/size_32dp"
+            android:layout_height="@dimen/size_32dp"
+            android:layout_below="@+id/fragment_profile_user_name_text_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:src="@android:drawable/ic_menu_add" />
+
+
+        <LinearLayout
+            android:layout_below="@+id/fragment_profile_user_level_image_view"
+            android:layout_marginTop="@dimen/size_32dp"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_margin="@dimen/size_16dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:textColor="@android:color/black"
+                android:text="34\nfavorites"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_margin="@dimen/size_16dp"
+                android:layout_width="1dp"
+                android:background="@color/light_gray"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_margin="@dimen/size_16dp"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:textColor="@android:color/black"
+                android:text="12\ninterests"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:thumb="@drawable/custom_switch_thumb"
+        app:track="@drawable/custom_switch_track"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_profile_user_info_containae"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:checked="true"
+        app:useMaterialThemeColors="false"
+        android:layout_width="wrap_content"
+        app:showText="true"
+        android:textOn="Public"
+        android:textOff="Private"
+        android:layout_marginTop="@dimen/size_32dp"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,11 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Starter</string>
-    <string name="welcome_to_starter">Welcome to Starter</string>
-    <string name="talk_to_interesting_people">Talk to interesting people</string>
-    <string name="welcome">Get Started</string>
-    <string name="already_have_account">Already have account?</string>
-    <string name="sign_in">Sign in</string>
-    <string name="customize_your_interests">Customize your interests</string>
+    <string name="welcome_to_starter">ברוך הבא לסטארטר</string>
+    <string name="talk_to_interesting_people">דברו עם אנשים מעניינים</string>
+    <string name="welcome">התחל</string>
+    <string name="already_have_account">כבר יש לך משתמש?</string>
+    <string name="sign_in">התחבר</string>
+    <string name="customize_your_interests">בחר העדפות</string>
     <string name="just_to_give_you_the_best_experience">Just to give you the best experience</string>
     <string name="chat_with_awesome_people">Chat with awesome people</string>
     <string name="our_ai_find_the_best_people_that_share_your_interests">Our AI find the best people that share your interests</string>
@@ -37,6 +38,5 @@
     <string name="you_are_ready_to_go">You are ready to go!</string>
     <string name="get_started">Get Started</string>
     <string name="done">Done!</string>
-    <string name="my_profile">My Profile</string>
-
+    <string name="my_profile">הפרופיל שלי</string>
 </resources>
